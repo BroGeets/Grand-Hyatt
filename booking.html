@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+	<title> Book A Stay | Grand Hyatt</title>
+</head>
+
+<body>
+<div class="header">
+	<a href="home.html"><img src="logo(1).png" id="logo"></a>
+	<span id="top">GRAND | HYATT</span>
+	<span id="bottom">Panaji, Goa</span>
+	<div id="book"><a  href="booking.html"><button id="booking">Book A Stay</button></a></div>
+</div>
+<br><br><br><br><br>
+
+<div class="ahead">Book A Stay</div>
+
+
+
+<form name="bookings" onsubmit="return validate()">
+	<div>
+		<label for="checkin">Check-In:</label>
+		<input type="date" id="checkin" name="checkin" >
+		<div id="kid">
+		<label for="checkout">Check-Out:</label>
+		<input type="date" id="checkout" name="checkout"></div>
+	</div><br><br>
+
+	<div>
+		<label for="adults">Number Of Adults:</label>
+		<input type="number" id="adults" name="adults">
+		<p id="aval"></p>
+		<div id="kid">
+		<label for="children">Number Of Childern:</label>
+		<input type="number" id="children" name="children"></div>
+		<p id="cval"></p>
+	</div><br><br>
+
+	<label for="nrooms">Number Of Rooms:</label>
+	<input type="number" id="nrooms" name="nrooms" >
+	<p id="rval"></p>
+	<br><br><br><br><br><br><br><br>
+
+	<input type="submit" value="Check Availabitlity" id="submit" ></input>
+	<input type="reset" id="reset"></input>
+
+</form>
+
+<footer>
+	<br>
+	<p>Contact Us: <b>Phone</b> +91 1234567890 
+	<span id="foot"><b>Email</b> grandhyatt@hotel.com</span></p>
+	<br>
+	<p>Designed by: U21CS029 Geetanjali Ghatak</p>
+</footer>
+
+<script type="text/javascript">
+	console.log("hello");
+	function validate(){
+		console.log("function start");
+		var a=document.myform.adults.value;
+		var c=document.myform.children.value;
+		var r=document.myform.nrooms.value;
+		if (isNaN(a) || a<0 || a=="" || a==null){
+			window.alert("Invalid number of adults");
+			return false;
+		}
+		else if (isNaN(c) || c<0|| c=="" || c==null){
+			alert("Invalid number of children");
+			return false;
+		}
+		else if (isNaN(r) || r<0){
+			alert("Input Not Valid");
+			return false;
+		}
+		else{
+			alert("Sorry, no rooms are available for the selected dates.");
+		}
+		console.log("End");
+	}
+</script>
+</body>
+
+</html>

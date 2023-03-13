@@ -1,0 +1,122 @@
+.header{
+	background-color:white;
+	height:50px;
+	width:100%;
+	top:0px;
+	position:fixed;
+	padding:1% 5% 1% 2%;
+	z-index:2;
+	border-bottom:solid 3px red;
+}
+
+#logo{
+	height:100%;
+	width:auto;
+	float:left;
+}
+
+#top{
+	color:gold;
+	text-decoration:strong;
+	font-size:25px;
+	position:relative;
+	top:20%;
+	left:2%;
+}
+
+#bottom{
+	position:relative;
+	top:25px;
+	left:-155px;
+}
+
+#book{
+	position:relative;
+	top:-95%;
+	right:-80%;
+	text-align:center;
+	height:10px;
+	width:10%;
+}
+
+#booking:hover{
+	background-color:yellow;
+	cursor:pointer;
+}
+
+#booking{
+	border:solid 2px black;
+	border-radius:4px;
+	padding: 10px 10px 30px 10px;
+	background-color:gold;
+	height:10px;
+	width:110%;
+	color:black;
+	font-size:125%;
+}
+
+footer{
+	background-color:black;
+	color:white;
+	width:100%;
+	border-top:solid 3px red;
+}
+
+#foot{
+	float:right;
+	margin-right:25%;
+}
+
+.ahead{
+	color:red;
+	font-size:250%;
+	text-align:center;
+}
+
+.bhead{
+	font-size:250%;
+	margin-left:10%;
+	font-weight:bold;
+}
+
+img{
+	height:auto;
+	width:55%;
+	display:inline-block;
+}
+
+.suite, .room{
+	text-align:center;
+}
+
+.chead{
+	font-size:200%;
+	font-weight:bold;
+	position:relative;
+	right:20%;
+	display:block;
+	text-decoration:underline;
+}
+
+.desc{
+	width:50%;
+	display:inline-block;
+	text-align:justify;
+	font-size:125%;
+}
+
+.cost{
+	color:red;
+	font-size:150%;
+	font-weight:bold;
+	position:relative;
+	left:15%;
+}
+
+body{
+	background-image:url('b1.2.jpg');
+	background-attachment:fixed;
+	background-size:100%;
+}
+	
+
